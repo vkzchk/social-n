@@ -1,0 +1,5 @@
+.header {
+  grid-column: 1 / -1;
+  height: 20vh;
+  background:linear-gradient(#0f2027, #203a43, #2c5364);
+}

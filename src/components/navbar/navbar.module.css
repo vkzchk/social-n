@@ -1,0 +1,15 @@
+.navbar {
+  background: linear-gradient(#11998e,#38ef7d);
+  padding: 20px;
+}
+.item a {
+  color: #fff;
+  text-decoration: none;
+}
+.item a.active {
+  color: gold;
+}
+.friendList img {
+  width: 30px;
+  border-radius: 50px;
+}
