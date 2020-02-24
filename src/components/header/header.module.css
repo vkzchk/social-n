@@ -3,3 +3,10 @@
   height: 20vh;
   background:linear-gradient(#0f2027, #203a43, #2c5364);
 }
+.loginBlock {
+  float: right;
+}
+
+.loginBlock a {
+  color: white;
+}
