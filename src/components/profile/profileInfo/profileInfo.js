@@ -5,6 +5,7 @@ import Preloader from '../../common/preloader/preloader'
 import userPhoto from '../../../assets/images/user.png'
 
 const ProfileInfo = (props) => {
+
   if (!props.profile) {
     return <Preloader />
   }
