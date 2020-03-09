@@ -3,6 +3,7 @@ import React from 'react';
 import classes from './dialogs.module.css';
 import DialogItem from './dialogItem/dialogItem';
 import Message from './message/message';
+import { Redirect } from 'react-router-dom';
 
 
 const Dialogs = (props) => {
@@ -22,6 +23,10 @@ const Dialogs = (props) => {
     props.updateNewMessageText(text)
   }
 
+  if (!props.isAuth) {
+    return <Redirect to={'/login'} />
+  }
+
 
   return (
     <div className={classes.dialogs}>
@@ -32,7 +37,7 @@ const Dialogs = (props) => {
         <div>{messagesElements}</div>
         <div>
           <div>
-            <textarea onChange={onMessageChange}  cols="30" rows="5" value={newMessageText} placeholder="Enter your message"/>
+            <textarea onChange={onMessageChange} cols="30" rows="5" value={newMessageText} placeholder="Enter your message" />
           </div>
           <div>
             <button onClick={sendMessage} >Send</button>

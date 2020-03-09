@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 
 const Header = (props) => {
+
   return (
     <div className={classes.header}>
       <div className={classes.loginBlock}>
